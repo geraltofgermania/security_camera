@@ -27,3 +27,6 @@ Basic Program Logic
 
 
 Outline of Python Script for Recording Videos
+
+Program description: the script stars the camera and records a 10 - 30 minute video, ends the video and saves
+it to the desired path.
