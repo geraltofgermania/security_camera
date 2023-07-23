@@ -1,0 +1,29 @@
+Outline
+
+The project consists of at least two devices, there could be more, and the code should be made to handle more
+than 1 security camera. The devices are a Raspberry Pi 4 that will handle data storage and act as a server
+to access said data; the other device is a Raspberry Pi Zero that will connect to the Raspberry Pi 4 via Bluetooth
+, in a closed SCP between the two. I have to reaserch how this can be accomplished. The Pi Zero will
+act as the security camera, recording videos in chucks of 10-30 minutes, depending on configuration. Then these
+videos will be sent via SCP, or alterantively, FTP to the Raspberry Pi server. On both devices these videos will
+be kept until a certain amount of space is filled by them. Example: A 500GB partition dedicated for this fills
+up then the oldest video will be deleted to make space for the new video and so on.
+Then this videos will be accessible via Apache2 server, with a login username and password, only for viewing,
+copying, downloading, etc. will only be done directly at the server.
+
+Project Progression
+1. Python Script for recording 10-30 minute videos
+2. Python Script for data handling of videos
+3. Script for sharing the videos between the two devices using Bluetooth SCP
+4. Python Script for data handling at server
+5. Configure server
+
+Basic Program Logic
+1. Pi Zero Records Video
+2. Pi Zero Checks Storage
+3. Pi Zero sends video to R. Pi over B. SCP
+4. R. Pi stores videos and check Storage
+5. Videos can be viewed via Apache2 server
+
+
+Outline of Python Script for Recording Videos
