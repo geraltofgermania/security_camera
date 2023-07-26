@@ -30,3 +30,9 @@ Outline of Python Script for Recording Videos
 
 Program description: the script stars the camera and records a 10 - 30 minute video, ends the video and saves
 it to the desired path.
+
+Some notes on the project so far:
+	1. Set up WPA_Supplicant and SSH before first boot
+	2. In order to work on this I need to get closer to my router since my wifi is terribly bad.
+	3. Once wifi connection is good and is up on start up, we'll test SSH and install picamera
+
